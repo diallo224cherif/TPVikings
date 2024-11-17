@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/utils/server.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/api/utils/server.php';
 
 function getDatabaseConnection(): PDO {
     try {

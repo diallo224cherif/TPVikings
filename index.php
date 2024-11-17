@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/utils/database.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/api/utils/database.php';
 
 try {
     $db = getDatabaseConnection();
