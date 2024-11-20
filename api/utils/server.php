@@ -3,12 +3,11 @@
 function methodIsAllowed(string $action): bool {
     $method = $_SERVER['REQUEST_METHOD'];
     switch ($action) {
+        case 'update':
         case 'create':
             return $method == 'PUT';
         case 'read':
             return $method == 'GET';
-        case 'update':
-            return $method == 'PATCH';
         case 'delete':
             return $method == 'DELETE';
         default:

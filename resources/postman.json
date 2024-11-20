@@ -37,9 +37,9 @@
 					"response": []
 				},
 				{
-					"name": "Create Copy",
+					"name": "Update",
 					"request": {
-						"method": "PATCH",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -51,13 +51,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{HOST}}/viking/service.php",
+							"raw": "{{HOST}}/viking/update.php?id=1",
 							"host": [
 								"{{HOST}}"
 							],
 							"path": [
 								"viking",
-								"service.php"
+								"update.php"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
 							]
 						}
 					},
@@ -130,25 +136,6 @@
 					"response": []
 				}
 			]
-		},
-		{
-			"name": "Health check",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8888/index.php",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8888",
-					"path": [
-						"index.php"
-					]
-				}
-			},
-			"response": []
 		}
 	]
 }
