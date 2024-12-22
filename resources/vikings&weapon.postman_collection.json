@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "7bd733fa-451b-4d11-8214-b74cbb5e7704",
+		"name": "vikings&weapon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40587859"
+	},
+	"item": [
+		{
+			"name": "Find one weapon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2025/api/weapon/find.php",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"find.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find all weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2025/api/weapon/find.php",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"find.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create weapon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"type\":\"knife\",\n    \"damage\":\"25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/weapon/create.php",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update weapon",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"type\":\"knife\",\n    \"damage\":\"42\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/weapon/update.php?id=6",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete weapon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"id\":\"6\",\n    \"name\":\"tassery\",\n    \"health\":\"400\",\n    \"attack\":\"200\",\n    \"defense\":\"100\",\n    \"weaponId\": \"3\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/weapon/delete.php?id=4",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find One viking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/findOne.php?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"findOne.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find all vikings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/find.php",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"find.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create viking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"name\":\"atos\",\n    \"health\":\"450\",\n    \"attack\":\"230\",\n    \"defense\":\"150\",\n    \"weaponId\": \"2\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/create.php",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"create.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update viking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"name\":\"atos\",\n    \"health\":\"500\",\n    \"attack\":\"130\",\n    \"defense\":\"100\",\n    \"weaponId\": \"2\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/update.php?id=8",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"update.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddWeapon pour viking",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n    \"weaponId\":\"6\"\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/addWeapon.php?id=4",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"addWeapon.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete update weapon viking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/weapon/delete.php?id=5",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"weapon",
+						"delete.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findByWeapon viking",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2025/api/viking/findByWeapon.php?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "2025",
+					"path": [
+						"api",
+						"viking",
+						"findByWeapon.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
