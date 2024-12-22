@@ -135,7 +135,10 @@ Attention : la nouvelle fonctionnalité d'Update ne doit mettre à jour **que** 
 |-------------------------------------------------|---------------------------------------------------------------------------------|--------|
 | **Suppression des armes associées aux vikings** | Lorsqu'une arme est supprimée, tous les vikings associés perdent cette arme.    | 1.5    |
 | **GET /viking/findByWeapon.php**                | Retourne tous les vikings avec l'arme demandée sous forme HATEOAS (nom + lien). | 1.5    |
-
+## Le lien du repository GitHub
+|--|
+https://github.com/diallo224cherif/TPVikings
+|--| 
 
 Les points des fonctionnalités bonus seront ajoutés à votre note d'examen finale ou à votre note de QCM.
 ### Repartition du travaille par groupe
