@@ -31,6 +31,7 @@ Mise à jour des vikings en cas de suppression d'une arme :
 Assurer que les vikings dont l'arme est supprimée sont correctement mis à jour (par exemple, suppression ou nullification de la clé étrangère).
 Ajout de la fonctionnalité GET /viking/findByWeapon.php?id=<weaponId> :
 Création d'un point de terminaison permettant de récupérer tous les vikings associés à une arme donnée.
+Un export de l'environnement Postman dans le fichier vikings&weapon
 |--|
 
 
